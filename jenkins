@@ -1,0 +1,54 @@
+    Jenkins Server
+
+    2  sudo yum update -y
+    3  sudo wget -O /etc/yum.repos.d/jenkins.repo   https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    4  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+    5  sudo yum upgrade
+    6  sudo amazon-linux-extras install java-openjdk11 -y
+    7  java -version
+    8  yum install jenkins -y
+    9  systemctl enable jenkins
+   10  systemctl start jenkins
+   11  systemctl status jenkins
+   12  cat /var/lib/jenkins/secrets/initialAdminPassword
+   13  systemctl status jenkins
+   14  cat /var/lib/jenkins/secrets/initialAdminPassword
+   15  yum install java -y
+   16  cat /var/lib/jenkins/secrets/initialAdminPassword
+   17  sudo yum install java-17-amazon-corretto-headless
+   18  sudo yum install java-17-amazon-corretto
+   19  sudo yum install java-17-amazon-corretto-devel
+   20  sudo yum install java-17-amazon-corretto-jmods
+   21  /usr/lib/jvm/java-17-amazon-corretto.<cpu_arch>.
+   22  sudo alternatives --config java
+   23  systemctl enable jenkins
+   24  systemctl restart jenkins
+   25  systemctl status jenkins
+   26  cat /var/lib/jenkins/secrets/initialAdminPassword
+    
+
+     Slave
+ 2  yum update -y
+    3  yum install java-1.8.0-openjdk -y
+    4  java -version
+    5  clear
+    6  adduser slave
+    7  passwd slave
+    8  sudo visudo
+    9  vi /etc/ssh/sshd_config
+   10  service sshd restart
+   11  sudo yum install java-17-amazon-corretto-headless
+   12  sudo yum install java-17-amazon-corretto
+   13  sudo yum install java-17-amazon-corretto-devel
+   14  sudo yum install java-17-amazon-corretto-jmods
+   15  /usr/lib/jvm/java-17-amazon-corretto.<cpu_arch>.
+   16  sudo alternatives --config java
+   17  service sshd restart
+   18  yum install git -y
+   19  cd /tmp
+   20  ls -l
+   21  cd workspace
+   22  ls -l
+   23  cd project1
+   24  ls -l
+
